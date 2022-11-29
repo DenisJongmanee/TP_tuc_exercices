@@ -3,3 +3,5 @@ init-hook="from pylint.config import find_pylintrc; import os, sys; sys.path.app
 
 good-names=
     a-random-name
+
+disable=20

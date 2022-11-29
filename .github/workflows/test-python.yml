@@ -13,6 +13,12 @@ jobs:
     steps:
       #pull le depot   uses-> utiliser une action créer par quelqu'un d'autres
       - uses: actions/checkout@v3
-      - name: Print folder
+      
+      - name: Intall Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.10
+      - name: Intall requirements
         run: |
-          ls
+          python -m pip install -r requirements.txt
+          

@@ -28,6 +28,6 @@ jobs:
         
       - name: Run Pylint
         run: |
-          pylint application/ tests/
-
+          python -m pylint application/ tests/
+        continue-on-error: true
 

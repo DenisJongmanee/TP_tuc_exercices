@@ -1,0 +1,16 @@
+name: Python CI
+
+on:
+  workflow_dispatch:
+  push: ['main']
+
+jobs:
+  tests:
+    run-on: ubuntu-latest
+
+    steps:
+      #pull le depot   uses-> utiliser une action créer par quelqu'un d'autres
+      - uses: actions/checkout@v3
+      - name: Print folder
+        run: |
+          ls
